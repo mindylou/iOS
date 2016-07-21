@@ -14,7 +14,7 @@ String(format: "te%@st", some_text)
 // adding Strings to ints:
 String(format: "card%i", random_number)
 
-// Arrays: all have to be same type
+// ARRAYS: all have to be same type
 var my_array:[String] = ["book", "cat"]
 
 // length of array
@@ -30,3 +30,16 @@ my_array.removeAtIndex(1)
 // creating a new array object
 var int_array:[Int] = [Int]()
 int_array.append(0)
+
+// CONDITIONALS:
+var a = 9
+
+if a < 10{
+    print("hello")
+}
+else if a < 13{
+    print("woah")
+}
+else {
+    print("cool")
+}

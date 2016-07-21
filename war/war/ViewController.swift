@@ -13,14 +13,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var firstCardImageView: UIImageView!
     @IBOutlet weak var secondCardImageView: UIImageView!
     @IBOutlet weak var playRoundButton: UIButton!
+    @IBOutlet weak var player1ScoreLabel: UILabel!
+    @IBOutlet weak var player2ScoreLabel: UILabel!
     
-    var card_names:[String] = ["ace", "card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "jack", "queen", "king"]
+    var player1Score:Int = 0
+    var player2Score:Int = 0
+    
+    var card_names:[String] = ["card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "jack", "queen", "king", "ace"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.playRoundButton.setTitle("Play", forState: UIControlState.Normal)
 
     }
 
@@ -41,6 +45,23 @@ class ViewController: UIViewController {
         // Randomize number for second image view and display corresponding asset
         let random_number2 = Int(arc4random_uniform(UInt32(self.card_names.count)))
         self.secondCardImageView.image = UIImage(named: self.card_names[random_number2])
+        
+        // Determine the higher card and update the view
+        if random_number1 > random_number2 {
+            
+            self.player1Score += 1
+            player1ScoreLabel.text = String(player1Score)
+
+        }
+        else if random_number1 == random_number2 {
+            
+            
+        }
+        else {
+            
+            self.player2Score += 1
+            player2ScoreLabel.text = String(player2Score)
+        }
     }
 
 }
