@@ -54,7 +54,11 @@ class ViewController: UIViewController {
 
         }
         else if random_number1 == random_number2 {
-            
+            self.player1Score = 0
+            player1ScoreLabel.text = String(player1Score)
+            self.player2Score = 0
+            player2ScoreLabel.text = String(player2Score)
+
             
         }
         else {
