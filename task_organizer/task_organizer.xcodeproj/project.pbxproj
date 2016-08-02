@@ -15,6 +15,10 @@
 		0C9335431D426DAC005BB7BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9335411D426DAC005BB7BB /* LaunchScreen.storyboard */; };
 		0C93354E1D426DAC005BB7BB /* task_organizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C93354D1D426DAC005BB7BB /* task_organizerTests.swift */; };
 		0C9335591D426DAC005BB7BB /* task_organizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9335581D426DAC005BB7BB /* task_organizerUITests.swift */; };
+		0CC377AD1D4FCB6F00BC3B0F /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC377AC1D4FCB6F00BC3B0F /* AddTaskViewController.swift */; };
+		0CC377AF1D4FCCB300BC3B0F /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC377AE1D4FCCB300BC3B0F /* DismissSegue.swift */; };
+		0CC377B11D4FD22F00BC3B0F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC377B01D4FD22F00BC3B0F /* Task.swift */; };
+		0CC377B31D4FD32900BC3B0F /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC377B21D4FD32900BC3B0F /* TaskStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		0C9335541D426DAC005BB7BB /* task_organizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = task_organizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9335581D426DAC005BB7BB /* task_organizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task_organizerUITests.swift; sourceTree = "<group>"; };
 		0C93355A1D426DAC005BB7BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC377AC1D4FCB6F00BC3B0F /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddTaskViewController.swift; path = ../AddTaskViewController.swift; sourceTree = "<group>"; };
+		0CC377AE1D4FCCB300BC3B0F /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		0CC377B01D4FD22F00BC3B0F /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0CC377B21D4FD32900BC3B0F /* TaskStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,14 @@
 		0C9335351D426DAC005BB7BB /* task_organizer */ = {
 			isa = PBXGroup;
 			children = (
+				0CC377AC1D4FCB6F00BC3B0F /* AddTaskViewController.swift */,
 				0C9335361D426DAC005BB7BB /* AppDelegate.swift */,
 				0C9335381D426DAC005BB7BB /* MasterViewController.swift */,
 				0C93353A1D426DAC005BB7BB /* DetailViewController.swift */,
 				0C93353C1D426DAC005BB7BB /* Main.storyboard */,
+				0CC377B01D4FD22F00BC3B0F /* Task.swift */,
+				0CC377B21D4FD32900BC3B0F /* TaskStore.swift */,
+				0CC377AE1D4FCCB300BC3B0F /* DismissSegue.swift */,
 				0C93353F1D426DAC005BB7BB /* Assets.xcassets */,
 				0C9335411D426DAC005BB7BB /* LaunchScreen.storyboard */,
 				0C9335441D426DAC005BB7BB /* Info.plist */,
@@ -260,8 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C93353B1D426DAC005BB7BB /* DetailViewController.swift in Sources */,
+				0CC377AF1D4FCCB300BC3B0F /* DismissSegue.swift in Sources */,
+				0CC377AD1D4FCB6F00BC3B0F /* AddTaskViewController.swift in Sources */,
 				0C9335391D426DAC005BB7BB /* MasterViewController.swift in Sources */,
+				0CC377B11D4FD22F00BC3B0F /* Task.swift in Sources */,
 				0C9335371D426DAC005BB7BB /* AppDelegate.swift in Sources */,
+				0CC377B31D4FD32900BC3B0F /* TaskStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +502,7 @@
 				0C93355F1D426DAC005BB7BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C9335601D426DAC005BB7BB /* Build configuration list for PBXNativeTarget "task_organizerTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +511,7 @@
 				0C9335621D426DAC005BB7BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C9335631D426DAC005BB7BB /* Build configuration list for PBXNativeTarget "task_organizerUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +520,7 @@
 				0C9335651D426DAC005BB7BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -39,7 +39,6 @@ class ViewController: UIViewController {
 
         // Randomize number for first image view and display corresponding asset
         let random_number1 = Int(arc4random_uniform(UInt32(self.card_names.count)))
-            //this casting is so irritating
         self.firstCardImageView.image = UIImage(named: self.card_names[random_number1])
         
         // Randomize number for second image view and display corresponding asset
