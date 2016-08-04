@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C9335321D426DAC005BB7BB"
+               BlueprintIdentifier = "0C3401F21D50FA5100BDDECF"
                BuildableName = "task_organizer.app"
                BlueprintName = "task_organizer"
                ReferencedContainer = "container:task_organizer.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C9335481D426DAC005BB7BB"
+               BlueprintIdentifier = "0C3402081D50FA5100BDDECF"
                BuildableName = "task_organizerTests.xctest"
                BlueprintName = "task_organizerTests"
                ReferencedContainer = "container:task_organizer.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C9335531D426DAC005BB7BB"
+               BlueprintIdentifier = "0C3402131D50FA5100BDDECF"
                BuildableName = "task_organizerUITests.xctest"
                BlueprintName = "task_organizerUITests"
                ReferencedContainer = "container:task_organizer.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C9335321D426DAC005BB7BB"
+            BlueprintIdentifier = "0C3401F21D50FA5100BDDECF"
             BuildableName = "task_organizer.app"
             BlueprintName = "task_organizer"
             ReferencedContainer = "container:task_organizer.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C9335321D426DAC005BB7BB"
+            BlueprintIdentifier = "0C3401F21D50FA5100BDDECF"
             BuildableName = "task_organizer.app"
             BlueprintName = "task_organizer"
             ReferencedContainer = "container:task_organizer.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C9335321D426DAC005BB7BB"
+            BlueprintIdentifier = "0C3401F21D50FA5100BDDECF"
             BuildableName = "task_organizer.app"
             BlueprintName = "task_organizer"
             ReferencedContainer = "container:task_organizer.xcodeproj">
