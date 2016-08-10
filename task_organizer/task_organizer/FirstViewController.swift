@@ -11,6 +11,7 @@ import UIKit
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tblTasks: UITableView!
+    let tableColor = UIColor(red: 108, green: 91, blue: 123, alpha: 1)
 
     // Reload table data upon each load of the view
     override func viewDidLoad() {
@@ -38,8 +39,10 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Default Tasks")
         
+        cell.backgroundColor = tableColor
         cell.textLabel!.text = taskMgr.tasks[indexPath.row].name
         cell.detailTextLabel!.text = taskMgr.tasks[indexPath.row].description
+        
         
         return cell
     }
