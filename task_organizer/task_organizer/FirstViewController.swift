@@ -20,7 +20,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.tblTasks.reloadData()
     }
     
@@ -30,27 +30,27 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     // Pull data out of array to display number of rows
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return taskMgr.tasks.count
         
     }
     
     // Set cell name, description to task name, description, heading/subtitle look
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Default Tasks")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Default Tasks")
         
         cell.backgroundColor = tableColor
-        cell.textLabel!.text = taskMgr.tasks[indexPath.row].name
-        cell.detailTextLabel!.text = taskMgr.tasks[indexPath.row].description
+        cell.textLabel!.text = taskMgr.tasks[(indexPath as NSIndexPath).row].name
+        cell.detailTextLabel!.text = taskMgr.tasks[(indexPath as NSIndexPath).row].description
         
         
         return cell
     }
     
     // Show delete if swipe left, then reload list
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if (editingStyle == UITableViewCellEditingStyle.Delete){
-            taskMgr.tasks.removeAtIndex(indexPath.row)
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.delete){
+            taskMgr.tasks.remove(at: (indexPath as NSIndexPath).row)
             tblTasks.reloadData()
         }
     }

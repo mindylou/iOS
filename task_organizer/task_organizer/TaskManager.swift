@@ -18,7 +18,7 @@ struct task{
 class TaskManager: NSObject {
     var tasks = [task]()
     
-    func addTask(nom:String, desc:String){
+    func addTask(_ nom:String, desc:String){
         tasks.append(task(name: nom, description: desc))
     }
 }

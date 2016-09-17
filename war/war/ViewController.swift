@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func playRoundTapped(sender: UIButton) {
+    @IBAction func playRoundTapped(_ sender: UIButton) {
         // Randomize each card and display it
 
         // Randomize number for first image view and display corresponding asset
