@@ -24,7 +24,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     }
     
     //adding records of tasks
-    @IBAction func btnAddTask(sender:UIButton){
+    @IBAction func btnAddTask(_ sender:UIButton){
         if (txtTask.text==""){
             // task title is blank, don't add a record
         }
@@ -40,12 +40,12 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     }
     
     // dismiss keyboard when user touches screen
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
     // dismiss keyboard when user presses return
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
