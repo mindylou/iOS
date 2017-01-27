@@ -1,0 +1,6 @@
+framework module Pods_EventfulAPI {
+  umbrella header "Pods-EventfulAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
