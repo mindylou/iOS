@@ -5,9 +5,7 @@ Tapping on an event brings you to a page that displays more information about it
 
 This app uses Cocoapods. To install, run 
 ```bash
-git clone --recursive https://github.com/mindylou/WeatherApp.git
+git clone --recursive https://github.com/mindylou/iOS.git
 pod install
 ```
-within the first WeatherApp folder.
-
-Used for part of the [DateWars app](https://appsto.re/us/KSaAhb.i). 
+within the EventfulAPI folder.
